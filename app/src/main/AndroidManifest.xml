@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.photo_social">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_icon_luncher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_icon_luncher_foreground"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar">
+        <activity android:name=".AddActivity" android:parentActivityName=".WelcomeActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".WelcomeActivity"    />
+        </activity>
+        <activity android:name=".WelcomeActivity" android:parentActivityName=".LoginActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".LoginActivity"    />
+        </activity>
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
